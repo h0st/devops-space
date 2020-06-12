@@ -1,0 +1,15 @@
+User space kernel modules:
+-------------------------------
+uio                 # User kernel I/O
+uio_pci_generic
+uio_hw_generic      # Hyper-V
+igb_uio             # DPDK
+
+-------------------------------
+Cloud network drivers/modules:
+-------------------------------
+Intel: e1000
+Azure: Mellanox (mlx3/4/5)
+AWS: ena
+
+-------------------------------

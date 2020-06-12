@@ -1,0 +1,18 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+# The loopback network interface
+# /etc/network/interfaces
+auto lo br0
+iface lo inet loopback
+# Set up interfaces manually, avoiding conflicts with, e.g., network manager
+iface eth0 inet manual
+# Bridge setup
+iface br0 inet static
+bridge_ports eth0
+address ххх.ххх.ххх.ххх
+broadcast ххх.ххх.ххх.ххх
+netmask ххх.ххх.ххх.ххх
+gateway ххх.ххх.ххх.ххх
+bridge_stp off
+bridge_fd 0
+bridge_maxwait 0
